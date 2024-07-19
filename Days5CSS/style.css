@@ -1,0 +1,12 @@
+h1{
+    color:#220202;
+    text-align: right;
+    width: 50%;
+    border: solid;
+    letter-spacing: 5px;
+
+}
+button{
+    color: rgb(95, 182, 24);
+    background-color: aliceblue;
+}
