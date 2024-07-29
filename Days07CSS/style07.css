@@ -1,0 +1,17 @@
+div{
+    height: 100%;
+    width: 500px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: black;
+    border-bottom: orange;
+}
+h1{
+    border: 2px dashed black;
+    border-left-color:  blue;
+
+}
+button{
+   padding: 2px 4px 6px 8px;
+   background-color: orange; 
+}
