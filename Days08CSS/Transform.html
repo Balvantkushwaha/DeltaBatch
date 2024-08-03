@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform properties applies </title>
+    <style>
+        section{
+            margin-top: 100px;
+        }
+        div{
+            height: 50px;
+            width: 100px;
+            
+            margin: 50px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #7aa874;
+        
+
+        }
+        div:nth-of-type(2n){
+            background-color:#f7db6a;
+
+        }
+        div:nth-of-type(3n){
+            background-color:#ebb02d;
+        }
+        #box1{
+            transform: rotate(180deg);
+        }
+        #box2{
+            transform: scale(1,1.5);
+            transform: scalex(2);
+        }
+        #box3{
+            transform: translate(-50px,-50px);
+        }
+        #box4{
+            transform: skew(40deg);
+        }
+        #box5{
+            transform: skew(45deg) rotate(10deg);
+        }
+        #box{
+            box-shadow: 2px 2px 10px rgb(0, 0, 0);
+        }
+</style>
+</head>
+<body>
+      <section>
+        <div id="box">BOX</div>
+        <br>
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+      </section>
+</body>
+</html>
