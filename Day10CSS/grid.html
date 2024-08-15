@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        #container{
+            width: 600px;
+            height: 300px;
+            background-color: rgb(241, 245, 11);
+            display: grid inline;
+            /* grid-template-rows: 50px 50px 50px 50px 50px;
+            grid-template-columns: 200px 200px 200px ; */
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            /* justify-items: end ; 
+            align-items: start; */
+            /* place-items:center; */
+
+        }
+        .item{
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: rgb(73, 187, 73);
+            text-align: center;  
+            
+        }
+          #one{
+             /* grid-column-start: 2;
+            grid-column-end: 5; */
+            /* grid-column: 1/ span 3;*/
+          
+        
+          }
+        #two{
+            /* grid-row-start: 1;
+            grid-row-end: span 3; */
+            /* grid-row: 1/span 3; */
+            justify-self: start;
+            align-self: flex-end;
+        } 
+        #three{
+            place-self: center;
+        }
+         
+    </style>
+</head>
+<body>
+    <!-- gird info  -->
+    <h1>Grid Playground</h1>
+    <div id="container">
+       <div class="item" id="one">1</div>
+       <div class="item" id="two">2</div>
+       <div class="item" id="three">3</div>
+       <div class="item">4</div>
+       <div class="item">5</div>
+    </div>
+    <sapn>
+        this is span
+    </sapn>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            animation-name:colorAnimation;
+            animation-duration: 20s;
+            animation-timing-function: ease-in;
+            animation-delay: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction:alternate;
+            
+
+  
+        }
+        @keyframes widthAnimation {
+            from{
+                width: 20px;
+            }
+            to{
+                width: 100%;
+            }
+        }
+
+        @keyframes fontAnimation {
+            from {
+                font-size: 20px;
+
+            }
+            to{
+                font-size: 40px;
+            }
+        }
+        @keyframes colorAnimation{
+            0%{
+                font-size: 20px;
+                color: aqua;
+                background-color: rgb(143, 21, 41);
+            }
+            50%{
+                font-size: 30px;
+                color: rgb(165, 102, 19);
+                background-color: rgb(44, 155, 30);
+            }
+            80%{
+                font-size: 20px;
+                color: aqua;
+                background-color: rgb(235, 201, 11);
+            }
+            100%{
+                font-size: 40px;
+                color: aqua;
+                background-color: rgb(11, 33, 230);
+            }
+        }
+    </style>
+</head>
+<body>
+   <h1> Animation </h1> 
+   <div class="box">
+    Balvant kushwha  
+  </div>   
+</body>
+</html>
